@@ -14,7 +14,7 @@ import VolumeDownRounded from '@mui/icons-material/VolumeDownRounded';
 
 
 const Widget = styled('div')(({ theme }) => ({
-  padding: 5,
+  padding: 10,
   borderRadius: 0,
   width: 343,
   maxWidth: '100%',
