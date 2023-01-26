@@ -2,7 +2,7 @@ import React from 'react'
 const Nbutton=({image})=>{
     return (
         <>
-        <div data-tooltip-target="tooltip-right" data-tooltip-placement="right" className='h-16 w-16 rounded-full bg-[rgba(255,255,255,0.5)] m-2 flex items-center justify-center bg-cover cursor-pointer sm:h-28 sm:w-28 z-[9999999999]'>
+        <div data-tooltip-target="tooltip-right" data-tooltip-placement="right" className='h-16 w-16 rounded-full bg-[rgba(255,255,255,0.5)] m-2 flex items-center justify-center bg-cover cursor-pointer sm:h-20 sm:w-20 z-[9999999999]'>
            <img src={`${image}`} alt="" className='w-[80%] h-[80%] rounded-full'/>
         </div>
         <div id="tooltip-right" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
