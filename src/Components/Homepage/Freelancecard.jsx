@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 
 const Freelancecard = ({title}) => {
-    const [dis,setdis]=useState({display:'dis'})
+    const [cls,setcls]=useState('');
     const swipe=()=>{
-       setdis({display:'none'});
+       setcls('ani');
     }
   return (
-    <div className='w-[96%] h-56 freelancecardbg rounded-xl absolute' style={dis}>
+    <div className={`w-[96%] h-56 sm:h-80 sm:w-[80%] ${cls} freelancecardbg rounded-xl absolute  cursor-pointer`}>
         <div className='p-2'>
             <div>
         <div className='text-white text-2xl font-bold'>

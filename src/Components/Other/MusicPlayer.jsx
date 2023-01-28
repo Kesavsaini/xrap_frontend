@@ -21,8 +21,7 @@ const Widget = styled('div')(({ theme }) => ({
   margin: 'auto',
   position: 'relative',
   zIndex: 1,
-  backgroundColor:
-    theme.palette.mode === 'dark' ? 'rgba(0,0,0,0.6)' : 'rgba(0,0,0,0.6)',
+  backgroundColor:  'rgba(0,0,0,0.6)',
   backdropFilter: 'blur(40px)',
 }));
 
