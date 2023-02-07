@@ -27,7 +27,7 @@ const Widget = styled('div')(({ theme }) => ({
 
 const CoverImage = styled('div')({
   width: 100,
-  height: 100,
+  height:100,
   objectFit: 'cover',
   overflow: 'hidden',
   flexShrink: 0,
