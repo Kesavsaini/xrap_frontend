@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BettleSpaceCard = ({time,p1,p2}) => {
+const BettleSpaceCard = ({time,p1,p2,hm}) => {
   return (
-    <div className='flex justify-center items-center w-[100%] my-3 sm:w-[33%]'>
+    <div className={`flex justify-center items-center w-[100%] my-3 sm:${hm?'w-[100%]':'w-[33%]'}`}>
     <div className='w-[95%] h-20 bettlecardbg rounded-xl m-[40px]'>
       <div className='flex w-[100%] justify-between'>
       <div className='text-xl text-white font-semibold m-3'>

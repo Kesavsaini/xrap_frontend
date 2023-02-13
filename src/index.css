@@ -30,5 +30,22 @@
   /* animation:bounce 1s; */
   animation:example 1s forwards ease-in-out;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #414040; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa6a6; 
+}
 
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

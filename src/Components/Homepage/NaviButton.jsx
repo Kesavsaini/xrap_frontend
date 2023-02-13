@@ -16,7 +16,6 @@ const NaviButton = () => {
   return (
     <div className='fixed top-36 left-3'>
      <Nbutton image="https://www.pngall.com/wp-content/uploads/6/Rap-PNG.png"/>
-     <Nbutton image="https://www.freepnglogos.com/uploads/black-f-logo-6.png"/>
      <Nbutton image="https://www.pngmart.com/files/4/Mic-PNG-Photos.png"/>
     </div>
   )
