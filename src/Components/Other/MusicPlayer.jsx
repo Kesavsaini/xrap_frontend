@@ -17,6 +17,7 @@ const Widget = styled('div')(({ theme }) => ({
   padding: 10,
   borderRadius: 0,
   width: 343,
+  height:'100%',
   maxWidth: '100%',
   margin: 'auto',
   position: 'relative',
@@ -25,16 +26,19 @@ const Widget = styled('div')(({ theme }) => ({
   backdropFilter: 'blur(40px)',
 }));
 
-const CoverImage = styled('div')({
+const CoverImage = styled('div')(({h})=>({
   width: 100,
-  height:100,
+  height:h?'100%':100,
   objectFit: 'cover',
   overflow: 'hidden',
   flexShrink: 0,
   borderRadius: 8,
   backgroundColor: 'rgba(0,0,0,0.08)',
   width: '100%',
-});
+  display:'flex',
+  alignItems:'center',
+  justifyContent:'center'
+}));
 
 const TinyText = styled(Typography)({
   fontSize: '0.75rem',
@@ -44,7 +48,7 @@ const TinyText = styled(Typography)({
   color:'white'
 });
 
-export default function MusicPlayer({coverimg}) {
+export default function MusicPlayer({coverimg,h}) {
   const theme = useTheme();
   const duration = 200; // seconds
   const [position, setPosition] = React.useState(32);
@@ -58,10 +62,10 @@ export default function MusicPlayer({coverimg}) {
   const lightIconColor =
     theme.palette.mode === 'dark' ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.4)';
   return (
-    <Box sx={{ width: '100%', overflow: 'hidden' }}>
+    <Box sx={{ width: '100%',height:'100%', overflow: 'hidden' }}>
       <Widget>
-      <Box sx={{alignItems: 'center' }}>
-          <CoverImage>
+      <Box sx={{alignItems: 'center' ,height:'70%'}}>
+          <CoverImage h={h}>
             <img
               alt="can't win - Chilling Sunday"
               src={coverimg}
